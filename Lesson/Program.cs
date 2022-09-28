@@ -57,3 +57,6 @@ Console.WriteLine($"result summ 1 to {limit} = {GetSumToLimit(limit)}"); */
 
 
 
+
+
+

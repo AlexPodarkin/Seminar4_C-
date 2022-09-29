@@ -46,17 +46,6 @@ switch (num)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Console.Write("Введите число:"); //321
 double num = Convert.ToInt32(Console.ReadLine());
 double result = 0;

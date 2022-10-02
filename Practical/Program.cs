@@ -153,7 +153,9 @@ class Seminar3
 
 
 
-int TestRain(int rain)
+
+
+/* int TestRain(int rain)
 {
     System.Console.Write("Enter Znak- 1 or 2:");
     rain = Convert.ToInt32(Console.ReadLine());
@@ -194,4 +196,56 @@ void Zad1()
     int ones = number % 10;
     System.Console.WriteLine("first num=" + tens + ": second num ="+ ones + ':');
 }
-Zad1();
+Zad1(); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Console.Clear();
+
+Console.Clear();
+
+int[] array = FillArray(123, -100, 500);
+
+int positiveSum = 0;
+int negativeSum = 0;
+
+Console.WriteLine("[" + String.Join(",", array) + "]");
+int count = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i] >= 10 && array[i] <= 99)
+    {
+        count = count + 1;
+    }
+}
+
+int[] FillArray(int size, int min, int max)
+{
+    int[] filledArray = new int[size];
+
+    for (int i = 0; i < filledArray.Length; i++)
+    {
+        filledArray[i] = new Random().Next(min, max + 1);
+    }
+    return filledArray;
+}
+Console.WriteLine("[" + String.Join(",", array) + "]");
+System.Console.WriteLine($"количество элементов массива 10-99 = {count}");
+
+int[] array2 = FillArray(5, -10, 50);
+for (int i = 0; i < array2.Length; i++)
+{
+    Console.Write($" {array[i]}, ");
+}
